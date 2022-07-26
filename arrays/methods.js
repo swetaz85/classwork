@@ -114,7 +114,63 @@
 
 
 // rest
-const arr2 = ['one', 'two', 'three', 'four'];
-const [a, b, ...rest] = arr2; // rest: достаем элементы из массива и создаем новый массив
+// const arr2 = ['one', 'two', 'three', 'four'];
+// const [a, b, ...rest] = arr2; // rest: достаем элементы из массива и создаем новый массив
 // rest должен быть только один в одной операции
-console.log(rest); // выведет ['three', 'four']
+// console.log(rest); // выведет ['three', 'four']
+
+
+// Даны 2 массива:
+let people1 = ['Samuel', 'Jack', 'Thomas','Henry','Leo','Connor','David','Ryan'];
+let people2 = ['Connor','Stanley','Leo', 'Albert','Owen','Oliver','Ethan','Thomas'];
+
+// 1. Пользователь вводит имя, если это имя есть в массиве people1, добавьте это имя в конец people2.
+// let userName = prompt("введите имя");
+// if (people1.includes(userName)) {
+//     people2.push(userName);
+// }
+// console.log(people2);
+
+// 2. Пользователь вводит имя, если это имя есть в массиве people2, удалите это имя из массива.
+// let userName = prompt("введите имя");
+// if (people2.includes(userName)) {
+//     let indexToDelete = people2.indexOf(userName);
+//     people2.splice(indexToDelete, 1);
+// }
+// console.log(people2);
+
+// 3. Создайте массив только из тех имен, которые совпадают в обоих массивах.
+for (let  i= 0; i < people1.length; i++) {
+    if (people1[i] === people2.includes(i)) {
+        
+    }
+    
+}
+
+
+
+
+
+
+// 4. Объедините массивы people1 и people2 так, чтобы в получившемся массиве не было одинаковых имен.
+// 5. Отсортируйте получившийся массив по алфавиту
+
+
+// 1. Дан массив ["John", "Peter", "David", "Lambert", "Eddie", "Janett", "Franz"];
+// Вырезать из массива "David", "Lambert", "Eddie" и записать их в отдельный массив
+
+// 2. Дан массив ["John", "Peter", "David", "Lambert", "Eddie", "Janett", "Franz"];
+// Переставить "Janett", "Franz" в начало массива
+
+// 3. Дан массив ["John", "Peter", "David", "Lambert", "Eddie", "Janett", "Franz"];
+// Заменить "Eddie", "Janett" на "Oleg","Valerchik"
+
+// 4. Дан массив ["John", "Peter", "David", "Lambert", "Eddie", "Janett", "Franz"];
+// "Перевернуть" массив, заменить первые 4 элемента на Митрофанов ("Mitrofan")
+
+// 5. Даны два массива 
+// ["John", "Peter", "David", "Lambert", "Eddie", "Janett", "Franz"]
+// ["Nikodim","Evlampij","Aristarkh","Drogolub","Vitalij"]
+
+// взять из второго массива все имена начина с "Aristarkh" (включительно)
+// и добавить их в 1ый массив (не должно получится двумерного массива)
