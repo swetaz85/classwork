@@ -81,13 +81,24 @@
 // console.log(add(1, 2, 3, 6));
 
 // среднее арифметическое любого количества элементов
-function average(a, b, ...argumentsArr) { // превращает в массив 
-    console.log(a);
-    console.log(argumentsArr.slice());
+// function average(a, b, ...argumentsArr) { // превращает в массив 
+    // console.log(a);
+    // console.log(argumentsArr.slice());
     // arguments // псевдомассив, хранит все аргументы переданные функцией, но в этом массиве нет методов
     // console.log(arguments);
     // console.log(arguments.length);
     // const argumentsArr2 = [...arguments];
+// }
+// average(54,3564,54,54,5545,4,554);
 
-}
-average(54,3564,54,54,5545,4,554);
+// let result = 0;
+// function average() { 
+//     //console.log(argumentsArr);    
+//     const argumentsArr = [...arguments];
+//     console.log(argumentsArr);
+//     for (let i = 0; i < argumentsArr.length; i++) {
+//         result += argumentsArr[i];        
+//     }
+//     console.log(result / argumentsArr.length);
+// }
+// average(54,3564,54,54,5545,4,554);
