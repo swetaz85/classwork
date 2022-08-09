@@ -165,7 +165,8 @@ const persons = [
 // console.log(result);
 
 
-//или:
+//или запись в одну строку:
 // const numbers = [99,2,3,5,3,74,6,2,74];
 // const result = numbers.reduce((acc, number, index, mass) => mass.includes(number, index + 1) &&  !acc.includes(number) ? [...acc, number] : acc, []);
 // console.log(result);
+
