@@ -93,13 +93,13 @@
 
 // let result = 0;
 // function average(...argumentsArr) { 
-//     console.log(argumentsArr);
 //     for (let i = 0; i < argumentsArr.length; i++) {
 //         result += argumentsArr[i];        
 //     }
-//     console.log(result / argumentsArr.length);
+//     return result / argumentsArr.length;    
 // }
-// average(54,3564,54,54,5545,4,554);
+// console.log(average(54,3564,54,54,5545,4,554));
+
 
 
 
