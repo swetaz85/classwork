@@ -40,20 +40,20 @@
 //  должно быть возведено в квадрат
 //  пример: [{a: 2, b: 1}, {a: 5, b: 144}, {a: 95, b: 49}]
 
-const arr = [
-    {a:2, b: 1}, {a:5, b:12}, {a: 95, b: 7}
-];
-const arr2 = [];
-for (let i = 0; i < arr.length; i++) {   
-    arr2[i] = {...arr[i], b: arr[i].b**2};
-}
-console.log(arr2);
+// const arr = [
+//     {a:2, b: 1}, {a:5, b:12}, {a: 95, b: 7}
+// ];
+// const arr2 = [];
+// for (let i = 0; i < arr.length; i++) {   
+//     arr2[i] = {...arr[i], b: arr[i].b**2};
+// }
+// console.log(arr2);
 
-//  4. создать массив на основе предыдущего, в котором
-//  поля a и b будут последовательно помещены в массив
-//  пример: [ 2, 1, 5, 144, 95, 49]
-const arr3 = [];
-for (let i = 0; i < arr2.length; i++) {
-    arr3.push(arr2[i].a, arr2[i].b);
-}
-console.log(arr3);
+// //  4. создать массив на основе предыдущего, в котором
+// //  поля a и b будут последовательно помещены в массив
+// //  пример: [ 2, 1, 5, 144, 95, 49]
+// const arr3 = [];
+// for (let i = 0; i < arr2.length; i++) {
+//     arr3.push(arr2[i].a, arr2[i].b);
+// }
+// console.log(arr3);

@@ -99,11 +99,57 @@
 // которая вернет массив только из тех чисел, которые 
 // повторялись в исходном. Массив, который возвращает 
 // функция [1,4,6,74]
+// function newArr(arr) {
+//     const arr2 = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr.includes(arr[i], i+1) && !arr2.includes(arr[i])) {            
+//             arr2.push(arr[i]);
+//         }        
+//     }
+//     return arr2;
+// }
+// console.log(newArr([1,1,1,4,4,5,1,6,6,74,74,74,3]));
+
 
 // 7. Написать функцию, которая принимает случайный 
 // двумерный массив (разной длины) из 8 элементов. Функция 
 // возвращает тот массив сумма элементов которого 
 // наибольшая
+
+//let randoms = new Array(8).fill(new Array(3).fill(Math.floor( Math.random() * 100)));
+//console.log(randoms);
+//console.log(maxArr(randoms));
+
+(function () {
+    const arr = new Array(8);    
+    let arrSum = [];
+    let maxSumArr = [];
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        let a = Math.ceil(Math.random() * 5);        
+        arr[i] = new Array(a);   
+        if (arr[i].length < 2) {
+            arr[i].push(a);
+        }
+        for (let j = 0; j < arr[i].length; j++) {
+            arr[i][j] = Math.ceil(Math.random() * 10);                          
+        }   
+    }   
+        for (let i = 0; i < arr.length; i++) {
+            sum = 0;
+            for (let j = 0; j < arr[i].length; j++) {
+                sum += arr[i][j]; 
+                arrSum[i] = sum;         
+            }             
+        }  console.log(arrSum);
+    let maxSum = arrSum.indexOf(Math.max());
+    return maxSumArr.push(arr[maxSum]);
+    console.log(maxSumArr);
+    console.log(arr);
+
+}) ()
+
+
 
 // 8. Написать программу, которая спрашивает у пользователя сколько ему 
 // лет. В программе должна присутствовать функция validator(), которая 
