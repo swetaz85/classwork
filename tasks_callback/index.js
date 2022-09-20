@@ -23,6 +23,21 @@
 // console.log(toggleMe(res()));
 // console.log(toggleMe(res()));
 
+// 2-й вариант:
+// function toggleMe () {
+//     let result = false;
+//     return () => {
+//         result = !result;
+//         return result;
+//     }
+// }
+// const res = toggleMe();
+// console.log(res());
+// console.log(res());
+// console.log(res());
+// console.log(res());
+// console.log(res());
+// console.log(res());
 
 // 2. Создать функцию funcCounter(), которая способна
 // считать количество своих вызовов. Если передать в эту
@@ -47,27 +62,41 @@
 //             }            
 //         } 
 //         return a;
-//     } 
-    
-// const funcCounter = funcCounterMaycer(15);
+//     }     
+// const funcCounter = funcCounterMaycer(25);
 // console.log(funcCounter());
 // console.log(funcCounter());
 // console.log(funcCounter());
-// console.log(funcCounter());
-// console.log(funcCounter());
-// console.log(funcCounter());
-// console.log(funcCounter());
-// console.log(funcCounter());
-// console.log(funcCounter());
-// console.log(funcCounter());
-// console.log(funcCounter());
-// console.log(funcCounter());
-// console.log(funcCounter());
-// console.log(funcCounter());
+// console.log(funcCounter(3));
 // console.log(funcCounter());
 // console.log(funcCounter());
 
-
+// от препода:
+// function CounterMaker() {
+//     let count = 0;
+//     let shoulsRaise = true;
+//     return function (num) {
+//         if (num) {
+//             count = num;
+//             shoulsRaise = num < 10;
+//         }
+//         if (shoulsRaise) {
+//             return ++count;
+//         } else {
+//             return count ? -- count : 0;
+//         }
+//     }
+// }
+// const counter = CounterMaker();
+// console.log(counter(20));
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter(3));
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
 
 // 3. Создать функцию classNameEditor(), которая
 // принимает строку с названием класса и добавляет
@@ -87,7 +116,7 @@
 // .join()
 
 // const classes = [];
-// function classNameEditor(className, val) {    
+// return function classNameEditor(className, val) {    
 //     if (val && classes.includes(className) !== true) {
 //         classes.push(className);        
 //         return classes.join(' ');
@@ -114,10 +143,24 @@
 
 // 4. Создать функцию, которая принимает массив и callback. Функция
 // должна каждый элемент массива обрабатывать callback’ом.
-
-// arr.map(() => {})
+// arr.map((item) => {})
 // map(arr, () => {})
 
+function arrNew(arr, cb) {
+    for () {}
+
+     cb(item[i])
+}
+function addItem(item) {
+    let arr1 = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] <= 3) {
+            arr1.push(arr[i]);
+        }        
+    }
+    return arr1;
+}
+console.log(arrNew([1,2,3,4,5], addItem));
 
 // 5. Создать функцию sumTo, которая принимает два числа и callback.
 // Задача функции складывать 2 числа, а задача callback’a заставлять
@@ -126,20 +169,21 @@
 // function toString (val) { return val + ''; }
 // sumTo(2,3, someCallback)
 
+
 // function sumTo(a, b, cb) {    
 //     let sum = a + b;
 //     return cb(sum);
 // }
+// function toNumber(val) {
+//     return  +val;     
+// }
 // function toString(val) {
-//     return  val + '';
+//     return  val + '';     
 // }
 // function toBoolean (val) {
-//     if (val) {
-//         return true
-//     } else {
-//         return false
-//     }
+//     return !!val;
 // }
+// console.log(sumTo(2, 3, toNumber));
 // console.log(sumTo(2, 3, toString));
 // console.log(sumTo(2, 3, toBoolean));
 
@@ -159,6 +203,41 @@
 // let userLogin = prompt('введите логин');
 // console.log( checkLogin(userLogin));
 
+// 2-й вариант:
+// function checkLogin(userLog ???????????) {
+//     let log = userLog;
+//     let logTrue = 'Valerchik';
+//     if (log === logTrue) {        
+//         return yes();      
+//     } 
+//     return no();
+// }
+// function yes() {
+//     return 'логин правильный';
+// }
+// function no() {
+//     return 'логин неправильный';
+// }
+// let userLogin = prompt('введите логин');
+// console.log( checkLogin(userLogin));
+
+// 3-й вариант:
+// let logTrue = 'Valerchik';
+// function checkLogin(userLogin, logTrue, yes, no) {      
+//     if (userLogin === logTrue) {        
+//         return yes();      
+//     } 
+//     return no();
+// }
+// const blabla = () => {
+//     return 'логин правильный';
+// }
+// const blabla2 = () => {
+//     return 'логин неправильный';
+// }
+// let userLogin = prompt('введите логин');
+// console.log( checkLogin(userLogin, logTrue, blabla, blabla2));
+
 
 // 7. Создать объект 
 // kurochka = {
@@ -175,6 +254,7 @@
 //     isAlive: true,
 //     isZazharena: false,
 // }
+
 // if (kurochka.isZazharena) {
 //     Object.defineProperty(kurochka, 'isAlive', {      
 //         value: 'false',  
