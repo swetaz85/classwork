@@ -193,3 +193,80 @@
 // })
 
 
+// 27.09.22
+// API aplication programing interface
+// https://reqres.in/
+// fetch
+// AJAx Async Javascript and XML
+// const footballPlayers = [{},{},{}]
+/* <FootballPlayers>
+    <player/>
+    <player/>
+    <player/>
+    <player/>
+</FootballPlayers> */ // XML уже не используют
+
+// JSON JavaScript Object Notation
+// JSON запаковывает данные и отправляет на back
+// "
+//     {
+//         "name": "John", // запись поля обязательно в строке
+//         "stack": [1,2,3],
+//         "addres": {
+//             "city": "Gomel"
+//         }
+//     }
+// "
+
+// AJAX
+// SPA Single Page Application
+
+// https://developer.mozilla.org/ru/docs/Web/HTTP/Status
+// Коды ответа HTTP
+
+// fetch('https://reqres.in/api/users?page=2') // fetch это асинхронная функция
+// .then((response) => {
+//     // console.log(response); // response это упаковка, которую содает fetch
+//     return response.json();
+// })
+// .then((data) => {
+//     console.log(data);
+// })
+
+// const user = {
+//     name: 'John',
+//     age: 26,
+//     address: {
+//         city: 'Gomel'
+//     }
+// }
+// const JSONedUser =  JSON.stringify(user); // запаковали в JSON
+// console.log(JSONedUser); 
+// const UnJSONedUser =  JSON.parse(user); // распаковали 
+// console.log(UnJSONedUser);
+
+// const userCopy = JSON.parse(JSON.stringify(user)); // прото и методы объекта не скопируются
+// userCopy.address.city = 'Minsk';
+// console.log(user);
+// console.log(userCopy);
+
+
+// POST запрос:
+fetch('https://reqres.in/api/users', {
+    method: 'POST',
+    body: JSON.stringify( { // нужно обязательно запаковать в JSON
+        name: 'John',
+        job: 'programmer'
+    })
+}) 
+.then((response) => {
+    return response.json();
+})
+.catch((data) => {
+    // return fetch()
+    data.status === 403;
+    alert('у вас нет прав')
+})
+.then((data) => {
+    console.log(data);
+})
