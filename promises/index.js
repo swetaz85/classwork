@@ -252,21 +252,21 @@
 
 
 // POST запрос:
-fetch('https://reqres.in/api/users', {
-    method: 'POST',
-    body: JSON.stringify( { // нужно обязательно запаковать в JSON
-        name: 'John',
-        job: 'programmer'
-    })
-}) 
-.then((response) => {
-    return response.json();
-})
-.catch((data) => {
-    // return fetch()
-    data.status === 403;
-    alert('у вас нет прав')
-})
-.then((data) => {
-    console.log(data);
-})
+// fetch('https://reqres.in/api/users', {
+//     method: 'POST',
+//     body: JSON.stringify( { // нужно обязательно запаковать в JSON
+//         name: 'John',
+//         job: 'programmer'
+//     })
+// }) 
+// .then((response) => {
+//     return response.json();
+// })
+// .catch((data) => {
+//     // return fetch()
+//     data.status === 403;
+//     alert('у вас нет прав')
+// })
+// .then((data) => {
+//     console.log(data);
+// })
