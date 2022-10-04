@@ -125,12 +125,5 @@
 // list.addEventListener('click', onLiClick);
 // this на ком вызвано событие, target на ком произошло
 
-const arr = ['BOOM', 'OK'];
-let b1 = arr[0];
-let b2 = arr[1];
-let b3 = arr[1];
-const cl = document.getElementById('game');
-console.log(cl);
-cl.addEventListener('click', () => {
-        console.log('a');    
-    })
+
+

@@ -12,6 +12,9 @@
         #list > li {
             border: 1px solid purple;
         }
+        .active > p + b::after {
+            border: 5px dotted red;
+        }
     </style>
 </head>
 <body>
@@ -20,16 +23,20 @@
     <input type="text" id="input">
     <h1>Header</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsum, amet error, exercitationem fugit harum officia magni praesentium eos necessitatibus, nesciunt facere natus at. Animi corporis voluptatem placeat laudantium modi.</p>
-    <div>
+    <div id="wrapper">
         <ul id="list">
-            <li>item1</li>
+            <li id="fitem">
+                <p id="pitem" data-smth="blabla" class="one two three">
+                    item1
+                </p> 
+            </li>
             <li>item2</li>
             <li class="item">item3</li>
             <li>item4</li>
             <li class="item">item5</li>
             <li>item6</li>
         </ul>
-        <ol id="test">
+        <ul id="test">
             <li>item1</li>
             <li class="item">item2</li>
             <li>item3</li>
@@ -37,7 +44,7 @@
             <li>item5</li>
             <li>item6</li>
             <li>item7</li>
-        </ol>
+        </ul>
     </div>
     <!-- <form action="">
         <input type="text">
@@ -50,6 +57,7 @@
     </div>
 
 
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
+    <script src="./index_04.10.22.js"></script>
 </body>
 </html>
