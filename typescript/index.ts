@@ -139,7 +139,99 @@
 // const res2 = foo(p2,['2']);
 
 
-type FooNever = () => never; // бесконечная функция
-const foo: FooNever = () => {
-    foo();
+// type FooNever = () => never; // бесконечная функция
+// const foo: FooNever = () => {
+//     foo();
+// }
+
+
+// type Person = {
+//     name: string;
+//     age: number;
+//     walk(to: string): void;
+// }
+
+// type Admin = { // дважды один type написать нельзя
+//     pass: string;
+//     isBoroda: boolean;
+// }
+
+// type PersonAdmin = Person & Admin & {city: string};
+// const obj: PersonAdmin = {
+    
+// }
+
+
+// interface IPerson {
+//     name: string;
+//     age: number;
+// }
+// interface IAdmin {
+//     pass: string;
+//     isBoroda: boolean;
+    
+// }
+// interface IAdmin { // два одинаковых interface можно записать, и дополнить в нем новое описание
+//     city: string;
+//     run(destination: string, speed: number): void;
+// }
+// const obj: IAdmin = {
+//     pass: 'Ivan',
+//     isBoroda: false,
+//     city: 'Gomel',
+//     run(destination) {
+//         console.log(`${this.pass} runs to ${destination}`);
+        
+//     }
+// }
+// obj.run('itstep', 23)
+
+// interface IPersonAdmin extends IPerson, IAdmin {
+//     city: string
+// }
+// const obj: IPersonAdmin = {
+//     name: 'Petya'
+// }
+
+class Person {
+    // readonly name: string;
+    // private age: number = 0;
+    protected age: number = 0; // даст доступ для классов наследников
+    static readonly planet = 'earth'; // readonly запретит перезапись
+    // constructor (name: string) {
+    //     this.name = name;
+    // }
+
+    constructor (protected readonly name: string) { // сокращение
+    }
+
+    showAge () {
+        console.log(this.age);
+        
+    }
+    run(destination: string) {
+        console.log(`${this.name} to ${destination}`);
+        
+    }
+}
+class Player extends Person {
+    constructor(name: string) {
+        super(name)
+    }
+    showAge () {
+        console.log(this.age);
+        
+    }
+    play () {
+        console.log(`${this.name} plays`);
+        
+    }
+}
+const p1 = new Player('Valerchik');
+
+Person.planet;
+const p = new Person('Valerchik');
+p.run('dfknbh')
+function greet(human: Person) {
+    console.log(`Hi there ${human.name}`);    
 }
