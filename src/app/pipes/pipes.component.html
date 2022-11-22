@@ -1,0 +1,24 @@
+<div class="container">
+    <h2 class="text-center">Pipes</h2>
+    <p>date - {{date}}</p>
+    <p>date - {{date | date:'medium'}}</p>
+    <p>date - {{date | date:'short'}}</p>
+    <p>date - {{date | date:'d M y'}}</p>
+    <p>date - {{date | date:'y M d'}}</p>
+    <p>date - {{date | date:'h:m:s'}}</p>
+    <p>date - {{date | date:'hh:mm:ss'}}</p>
+    <p>date - {{date | date:'HH:m:s'}}</p>
+    <p>https://angular.io/api/common/DatePipe</p>
+    <div>
+        <h3>NumberPipe</h3>
+        <p>&pi; = {{pi}}</p>
+        <p>&pi; = {{pi | number: '1.1-2'}}</p>
+        <p>Проценты - {{0.50 | percent }}</p>
+    </div>
+    <div>
+        <h3>StringPipe</h3>
+        <p>title - {{title | uppercase}}</p>
+        <p>title - {{title | lowercase}}</p>
+        <p>title - {{title | titlecase}}</p>
+    </div>
+</div>

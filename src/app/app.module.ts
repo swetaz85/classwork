@@ -5,16 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // для работы с формами и привязки данных
 import { FormsModule } from "@angular/forms";
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from "./footer/footer.component";
-import { NavComponent } from './nav/nav.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgIfComponent } from './ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    NavComponent
+    PipesComponent,
+    NgStyleComponent,
+    NgClassComponent,
+    NgIfComponent,
   ],
   imports: [
     BrowserModule,

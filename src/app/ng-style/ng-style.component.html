@@ -1,0 +1,16 @@
+<div class="container">
+    <h2 class="text-center">Директива ngStyle</h2>
+    <p style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure corrupti sed sapiente iusto vero quos deserunt itaque tempora quam sunt, quidem nam eius nobis odio? Eos, omnis alias? Totam, accusamus.</p>
+    <p [style.color]="color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis animi asperiores repudiandae quisquam fugiat perspiciatis minus in temporibus itaque, esse consectetur quos beatae veniam obcaecati doloribus? Similique veniam quae est?</p>
+    <button (click)="changeColor()">Изменить цвет</button>
+    <p [ngStyle]="{
+            'background-color': 'yellow',
+            color: color,
+            fontSize: large ? '3em' : '1em',
+            visibility: large ? 'hidden' : 'visible'
+        }"
+    >
+        Lorem, ipsum dolor.
+    </p>
+    <button (click)="toggle()">Переключить</button>
+</div>

@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app-new';
-  text = "to be or not to be...";
-  name: string = 'nick';
-  getTitle(): string {
-    return this.title;
-  }
+  title = 'Pipes and Directives';
 }
