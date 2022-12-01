@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ пиццы</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="viewing">
+                <h1>Область просмотра заказа:</h1>
+                <div>
+                    <ul  id="userIngredients">
+                    </ul>
+                </div>
+                <div class="price">
+                    <p>Цена:</p>
+                    <div id="price">0</div>
+                    <p>руб</p>
+                </div>
+            </div>
+            <div class="order">
+                <div id="images">
+                    <img id="img0" src="0.png" alt="" srcset="">
+                    <img id="img1" src="1.png" alt="" srcset="">
+                    <img id="img2" src="2.png" alt="" srcset="">
+                    <img id="img3" src="3.png" alt="" srcset="">
+                    <img id="img4" src="4.png" alt="" srcset="">
+                </div>                
+                <div>
+                    <button id="order">ЗАКАЗАТЬ</button> 
+                </div>
+            </div>
+        </div>        
+        <div class="ingredients">
+            <div class="composition">
+                <h2>Основа</h2>
+                <ul id="osnova" class="osnova">
+                </ul>
+                <!-- <h2>Основа</h2>
+                <ul>
+                    <li>
+                        <button  class="ingredient" id="osnova1">Основа 1 (томатный соус)</button>
+                    </li>
+                    <li>
+                        <button  class="ingredient" id="osnova2">Основа 2 (сырный соус)</button>
+                    </li>
+                    <li>
+                        <button  class="ingredient" id="osnova3"> Основа 3 (гриль соус)</button>
+                    </li>
+                    <li>
+                        <button  class="ingredient" id="osnova4">Основа 4 (ранч соус)</button>
+                    </li>
+                </ul> -->
+            </div>
+            <div class="composition">
+                <h2>Ингредиент1</h2>
+                <ul>
+                    <li>
+                        <button  class="ingredient"  id="ingredient1"> салями </button>
+                    </li>
+                    <li id="ingredient2">грибы</li>
+                    <li id="ingredient3">курица</li>
+                    <li id="ingredient4">бекон</li>
+                </ul>
+            </div>
+            <div class="composition">
+                <h2>Ингредиент2</h2>
+                <ul>
+                    <li id="ingredient5">сыр</li>
+                    <li id="ingredient6">лук</li>
+                    <li id="ingredient7">капуста</li>
+                    <li id="ingredient8">огурец</li>
+                </ul>
+            </div>
+            <div class="composition">
+                <h2>Соус</h2>
+                <ul>
+                    <li id="sauce1">майонез</li>
+                    <li id="sauce2">кетчуп</li>
+                    <li id="sauce3">горчица</li>
+                    <li id="sauce4">сливочно-чесночный</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

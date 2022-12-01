@@ -15,7 +15,10 @@
 // console.log(Person);
 
 // export default  можно сразу записать новым именем, при этом в исходнике имя не поменяется
-import SHTUKA from './person.js';
-console.log(new SHTUKA);
+// import SHTUKA from './person.js';
+// console.log(new SHTUKA);
 
 import SHTUKA, {person, cat as dog} from './person.js';
+console.log(new SHTUKA);
+console.log(person);
+console.log(dog);

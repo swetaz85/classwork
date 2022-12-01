@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallows</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=3dQ2cznDkjeMmsaemVzoqz_JCt9Zy7aJXGkLHdrwRRZepz_GdO6IIp8_Qp5jTycciZZmBWAfGiUpMEHYGW_5XVmjhVMSc-z-YPnuz3jHnTyBrcVZxaxfQRc-aCIKpxzet1q3w6nVA7EE74v-fU-aQ6aCE0fvEE0Afv8n83tEXgV77BJChGibasnHte80ILosaPTWQ_jexyMb_-xLWD5Gmp9P89VrICXcwoSkJ7DWSEh00tVpX9J3gxlqlBy7ddFmNVESBLGGuX3rONphDOnwb-voFvluyYyIIgkh25vyUIJP0WgcgyDXA2eazWePG_lVueIi9Oc3qwUhrhwu0pUC_CLiOyNpgSmgM1ia7DcdmF3xhia7tZmLoXTf0fAsa6XXVEgIWCdwHNvSsnDi-m23b2AY7tzTcw44p4-SeeC4oJ_W_EAyIRHnoBIVBZtngTnO2dN2VdKnw4uRRoD8dqS4hiNPOWZssqCFMRHfYdsMUe0s7MkNuXe3kBW0yaVGg_3eRXOOungt9p9q3DyDmtzbeyq0efYWe8Bj2PH2lH4ugmLgFW0dWcM57sGo1vqeHRXlQFBEMyR4GI-IFPhKKjk4VH_SLjiON3_Y1dglQ6EyeVCsYwDvZp9Hibf3STtMzB9HFciYkflF7rO6nqWX6mFpKQ" charset="UTF-8"></script><style>
+        #gameWrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }        
+        #img_1 {
+            display: block;
+            margin: 0 auto;
+            max-width: 80%;
+        }
+        #img_2 {
+            display: none;
+            margin: 0 auto;
+            max-width: 80%;
+        }
+        #img_3 {
+            display: none;
+            margin: 0 auto;
+            max-width: 80%;
+        }
+        #img_4 {
+            display: none;
+            margin: 0 auto;
+            max-width: 80%;
+        }
+        #dashes {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .inputWrapper {
+            margin: 20px;    
+            display: inline-block;
+            align-items: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+        #input-id {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            margin: 10px;
+        }
+        .result {            
+            border: black solid;
+            max-width: 800px;
+            height: 500px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 120px;
+            /* max-height: 100vh; */
+        }
+        .restart {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #resultVictory {
+        display: none;
+        height: 100%;
+        }
+        #resultGameover {
+        display: none;
+        height: 100%;
+        }
+        #sadness {
+            margin-top: 50px;
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="gameWrapper">
+        <div id="img" class="img">
+            <img id="img_1" src="1.png" alt="">
+            <img id="img_2" src="2.png" alt="">
+            <img id="img_3" src="3.png" alt="">
+            <img id="img_4" src="4.png" alt=""> 
+        </div>
+        <div id="dashes">
+        </div>
+        <div class="inputWrapper">
+            <input id="input-id" type="text">
+            <button id="btn">Ok</button>
+        </div>        
+    </div>
+    <div id="resultVictory" class="result">
+        <p class="textResult">
+            ПОБЕДА!!!
+        </p>       
+        <button class="restart">
+            <a href="#" onclick="window.location.reload();">Начать игру заново</a>
+        </button>
+    </div>
+    <div id="resultGameover" class="result">
+        <img id="sadness" src="./5.png" alt="" srcset="">
+        <p class="textResult">
+            ты проиграл...
+        </p>       
+        <button class="restart">
+            <a href="#" onclick="window.location.reload();">Начать игру заново</a>
+        </button>
+    </div>
+    <script src="index.js"></script>
+    <!-- <script src="./modules/const.js"></script>
+    <script src="./modules/showDashes.js" type="module"></script>
+    <script src="./modules/showWords.js"></script> -->
+    
+</body>
+</html>
